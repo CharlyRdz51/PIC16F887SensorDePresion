@@ -1,0 +1,162 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-007 medida
+008-00B Sensor
+00C-00D @sprintf_string
+00F     PORTA
+00F     TRISA
+010-013 voltaje
+014-015 @ITOF.P1
+014     @PSTRINGCN_695.P2
+014     lcd_init.i
+014-017 @PRINTF_L32D_695FPFPFR.P1
+014     MAIN.@SCRATCH1
+014     @PSTRINGC_695.@SCRATCH1
+015-018 lcd_init.LCD_INIT_STRING
+015     MAIN.@SCRATCH2
+015     @PSTRINGC_695.@SCRATCH2
+015     @PSTRINGCN_695.@SCRATCH1
+016     MAIN.@SCRATCH3
+016     @PSTRINGCN_695.@SCRATCH2
+017     MAIN.@SCRATCH4
+018-01B @DIVFF.P1
+018     @PRINTF_L32D_695FPFPFR.P2
+019     lcd_init.@SCRATCH1
+019     @PRINTF_L32D_695FPFPFR.@SCRATCH1
+01A     @PRINTF_L32D_695FPFPFR.@SCRATCH2
+01B     @PRINTF_L32D_695FPFPFR.@SCRATCH3
+01C-01F @DIVFF.P1
+01C     @PRINTF_L32D_695FPFPFR.@SCRATCH4
+01D     @PRINTF_L32D_695FPFPFR.@SCRATCH5
+01E     @PRINTF_L32D_695FPFPFR.@SCRATCH6
+01F     @PRINTF_L32D_695FPFPFR.@SCRATCH7
+020     @DIVFF.@SCRATCH1
+020     @PRINTF_L32D_695FPFPFR.@SCRATCH8
+021     lcd_putc.c
+021-024 @DIV3232.P1
+021-024 @MULFF.P2
+021-024 @FTOSD.P3
+021-024 @ADDFF.P4
+021     @DIVFF.@SCRATCH2
+022     lcd_gotoxy.x
+022     @delay_ms1.P1
+022     @DIVFF.@SCRATCH3
+023     lcd_gotoxy.y
+023     @DIVFF.@SCRATCH4
+024     lcd_gotoxy.address
+024     @DIVFF.@SCRATCH5
+025-028 @ADDFF.P1
+025-028 @DIV3232.P2
+025-028 @MULFF.P3
+025     lcd_gotoxy.@SCRATCH1
+025     @DIVFF.@SCRATCH6
+025     @FTOSD.@SCRATCH1
+026     lcd_send_byte.address
+027     lcd_send_byte.n
+028     lcd_read_byte.low
+028     lcd_send_byte.@SCRATCH1
+029     lcd_read_byte.high
+029     lcd_send_nibble.n
+029     @MULFF.@SCRATCH1
+029     @ADDFF.@SCRATCH1
+029     @DIV3232.@SCRATCH1
+02A     lcd_read_nibble.n
+02A     lcd_read_byte.@SCRATCH1
+02A     @MULFF.@SCRATCH2
+02A     @ADDFF.@SCRATCH2
+02A     @DIV3232.@SCRATCH2
+02B     lcd_read_nibble.@SCRATCH1
+02B     @MULFF.@SCRATCH3
+02B     @ADDFF.@SCRATCH3
+02B     @DIV3232.@SCRATCH3
+02C     @ADDFF.@SCRATCH4
+02C     @DIV3232.@SCRATCH4
+02D     @ADDFF.@SCRATCH5
+02D     @DIV3232.@SCRATCH5
+02E     @ADDFF.@SCRATCH6
+02F     @ADDFF.@SCRATCH7
+030     @ADDFF.@SCRATCH8
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  @const713.call
+000016  @const718.call
+000020  @const719.call
+00002C  @const720.call
+00003C  @const732.call
+00004E  @delay_ms1
+000068  lcd_send_nibble
+0000A6  lcd_read_nibble
+0000F8  lcd_read_byte
+000140  lcd_send_byte
+000186  lcd_init
+000202  lcd_gotoxy
+000224  lcd_putc
+000274  @PSTRINGC_695
+000294  @ITOF
+0002CC  @MULFF
+0003BE  @DIVFF
+000518  @ADDFF
+000782  @PSTRINGCN_695
+0007A0  @FTOSD
+0007E0  @DIV3232
+00086E  @PRINTF_L32D_695FPFPFR
+000A28  MAIN
+000A28  @cinit1
+000A3C  @cinit2
+
+Project Directory:
+    C:\Users\master\Desktop\SeminarioSensores\
+
+Project Files:
+    practica3.c                                             [04-dic-20 02:27  CRC=F695F53A]
+    ..\..\..\..\Program Files (x86)\PICC\devices\18F4550.h  [15-ene-18 15:57  CRC=06200171]
+    ..\..\..\..\Program Files (x86)\PICC\drivers\lcd.c      [22-feb-16 09:05  CRC=D1A6378A]
+
+Source signature=A00265BF
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=30A4
+
+Units:
+    practica3 (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   practica3.xsym
+    Errors:      practica3.err
+    Ext Symbols: practica3.esym
+    INHX32:      practica3.hex
+    Symbols:     practica3.sym
+    List:        practica3.lst
+    Debug/COFF:  practica3.cof
+    Project:     practica3.ccspjt
+    Call Tree:   practica3.tre
+    Statistics:  practica3.STA

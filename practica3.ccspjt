@@ -1,0 +1,46 @@
+[PROJECT]
+Target=practica3.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.076
+Compiler=PCH
+[Target Data]
+FileList=practica3.c
+[practica3.c]
+Type=4
+[mru-list]
+1=practica3.c
+
+[defines]
+buildcount=33
+
+[Opened Files]
+1=practica3.c
+t1=49
+Count=1
+
+[ProjectLog]
+Days=2
+D1=04-12-2020
+D1_L=6
+D1_L1=[4075]Stopped Editing.
+D1_L2=[7164]Started Editing.
+D1_L3=[7779]Stopped Editing.
+D1_L4=[7799]Started Editing.
+D1_L5=[9125]Stopped Editing.
+TotalEdit=33
+TotalDebug=0
+D1_E=33
+D1_D=0
+D1_L6=[9245]Project Closed.
+D2=07-12-2020
+D2_L=4
+D2_L1=[54987]Project Opened.
+D2_L2=[54999]Project Closed.
+D2_L3=[59495]Project Opened.
+D2_L4=[67269]Project Closed.
+[Units]
+Count=1
+1=practica3 (main)
+
+[fileformats]
+forcecoff=0
